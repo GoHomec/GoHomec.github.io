@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🔍JAVA常见基础面试题总结 02 | GoHomec</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="😉一个后端开发的技术博客">
+    <meta name="keywords" content="GoHomec,vuepress,自建博客,Java">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="GoHomec">
+    
+    <link rel="preload" href="/assets/css/0.styles.de467650.css" as="style"><link rel="preload" href="/assets/js/app.3bb93ac2.js" as="script"><link rel="preload" href="/assets/js/3.f4508a87.js" as="script"><link rel="preload" href="/assets/js/13.627ae6c3.js" as="script"><link rel="preload" href="/assets/js/4.d65b8449.js" as="script"><link rel="prefetch" href="/assets/js/10.8436fdbb.js"><link rel="prefetch" href="/assets/js/11.9ff5dd50.js"><link rel="prefetch" href="/assets/js/12.3ede944e.js"><link rel="prefetch" href="/assets/js/14.78cdd506.js"><link rel="prefetch" href="/assets/js/15.76093b46.js"><link rel="prefetch" href="/assets/js/16.95d5f6ef.js"><link rel="prefetch" href="/assets/js/17.89e0e405.js"><link rel="prefetch" href="/assets/js/18.21626b22.js"><link rel="prefetch" href="/assets/js/5.cd4ecdd2.js"><link rel="prefetch" href="/assets/js/6.b915722d.js"><link rel="prefetch" href="/assets/js/7.deca7be6.js"><link rel="prefetch" href="/assets/js/8.45700b16.js"><link rel="prefetch" href="/assets/js/9.8c2b24e5.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.96ea6645.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.de467650.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GoHomec</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/basics/java-basic-questions-01.html" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Java集合
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Java并发
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  JVM 虚拟机
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  springMVC
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  SpringBoot
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/技术文章/java/javase.html" class="nav-link">
+  JavaSE
+</a></li><li class="dropdown-subitem"><a href="/技术文章/java高级/javaee.html" class="nav-link">
+  JavaEE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/技术文章/vue/vue01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link">
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  MySql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/basics/java-basic-questions-01.html" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Java集合
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Java并发
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  JVM 虚拟机
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  Mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  springMVC
+</a></li><li class="dropdown-item"><!----> <a href="/技术文章/java/javase.html" class="nav-link">
+  SpringBoot
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/技术文章/java/javase.html" class="nav-link">
+  JavaSE
+</a></li><li class="dropdown-subitem"><a href="/技术文章/java高级/javaee.html" class="nav-link">
+  JavaEE
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/技术文章/vue/vue01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link">
+  时间轴
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>basics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/basics/java-basic-questions-01.html" class="sidebar-link">🔍JAVA常见基础面试题总结 01</a></li><li><a href="/java/basics/java-basic-questions-02.html" aria-current="page" class="active sidebar-link">🔍JAVA常见基础面试题总结 02</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/basics/java-basic-questions-02.html#一、面向对象基础" class="sidebar-link">一、面向对象基础</a></li><li class="sidebar-sub-header"><a href="/java/basics/java-basic-questions-02.html#二、java常用类" class="sidebar-link">二、Java常用类</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java常见基础面试题总结-02"><a href="#java常见基础面试题总结-02" class="header-anchor">#</a> 🔍JAVA常见基础面试题总结 02</h1> <h2 id="一、面向对象基础"><a href="#一、面向对象基础" class="header-anchor">#</a> 一、面向对象基础</h2> <h3 id="面向对象和面向过程的区别"><a href="#面向对象和面向过程的区别" class="header-anchor">#</a> 面向对象和面向过程的区别?</h3> <p>两者主要的区别在于解决问题的方式不同:</p> <ul><li>面向过程把解决问题的过程拆分成一个个方法，通过一个个方法的执行来解决问题。</li> <li>面向对象会先抽象出对象，然后通过对象执行方法的方式来解决问题。
+另外，面向对象开发的程序一般更易维护、易复用、易扩展</li></ul> <h3 id="对象的相等和引用相等的区别"><a href="#对象的相等和引用相等的区别" class="header-anchor">#</a> 对象的相等和引用相等的区别</h3> <ul><li>对象的相等一般比较的是内存中存放的内容是否相等。</li> <li>引用相等一般比较的是他们指向的内存地址是否相等。</li></ul> <h3 id="构造方法有哪些特点-是否可被-override-】"><a href="#构造方法有哪些特点-是否可被-override-】" class="header-anchor">#</a> 构造方法有哪些特点？是否可被 override?】</h3> <p>构造方法特点如下：</p> <ul><li>名字与类名相同。</li> <li>没有返回值，但不能用 void 声明构造函数。</li> <li>生成类的对象时自动执行，无需调用。</li></ul> <p>构造方法不能被 override（重写）,但是可以 overload（重载）,所以你可以看到一个类中有多个构造函数的情况。</p> <h3 id="面向对象三大特征"><a href="#面向对象三大特征" class="header-anchor">#</a> 面向对象三大特征</h3> <h3 id="接口和抽象类有什么共同点和区别"><a href="#接口和抽象类有什么共同点和区别" class="header-anchor">#</a> 接口和抽象类有什么共同点和区别？</h3> <p>共同点 ：</p> <ul><li>都不能被实例化。</li> <li>都可以包含抽象方法。</li> <li>都可以有默认实现的方法（Java 8 可以用 default 关键字在接口中定义默认方法）</li></ul> <p>不同点:</p> <ul><li>接口主要用于对类的行为进行约束，你实现了某个接口就具有了对应的行为。抽象类主要用于代码复用，强调的是所属关系。</li> <li>一个类只能继承一个类，但是可以实现多个接口。</li> <li>接口中的成员变量只能是 public static final 类型的，不能被修改且必须有初始值，而抽象类的成员变量默认 default，可在子类中被重新定义，也可被重新赋值。</li></ul> <h3 id="深拷贝和浅拷贝区别了解吗-什么是引用拷贝"><a href="#深拷贝和浅拷贝区别了解吗-什么是引用拷贝" class="header-anchor">#</a> 深拷贝和浅拷贝区别了解吗？什么是引用拷贝？</h3> <h2 id="二、java常用类"><a href="#二、java常用类" class="header-anchor">#</a> 二、Java常用类</h2> <h3 id="object-类的常见方法有哪些"><a href="#object-类的常见方法有哪些" class="header-anchor">#</a> Object 类的常见方法有哪些？</h3> <p>Object 类是一个特殊的类，是所有类的父类。它主要提供了以下 11 个方法：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">native</span> <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> <span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">/**
+ * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">native</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">/**
+ * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span>
+<span class="token comment">/**
+ * naitive 方法，用于创建并返回当前对象的一份拷贝。
+ */</span>
+<span class="token keyword">protected</span> <span class="token keyword">native</span> <span class="token class-name">Object</span> <span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">CloneNotSupportedException</span>
+<span class="token comment">/**
+ * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。
+ */</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">/**
+ * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">native</span> <span class="token keyword">void</span> <span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">/**
+ * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">native</span> <span class="token keyword">void</span> <span class="token function">notifyAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">/**
+ * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">native</span> <span class="token keyword">void</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">long</span> timeout<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">InterruptedException</span>
+<span class="token comment">/**
+ * 多了 nanos 参数，这个参数表示额外时间（以毫微秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 毫秒。。
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">long</span> timeout<span class="token punctuation">,</span> <span class="token keyword">int</span> nanos<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">InterruptedException</span>
+<span class="token comment">/**
+ * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">InterruptedException</span>
+<span class="token comment">/**
+ * 实例被垃圾回收器回收的时候触发的操作
+ */</span>
+<span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">finalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Throwable</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h3 id="和-equals-的区别"><a href="#和-equals-的区别" class="header-anchor">#</a> == 和 equals() 的区别</h3> <p>== 对于基本类型和引用类型的作用效果是不同的：</p> <ul><li>对于基本数据类型来说，== 比较的是值。</li> <li>对于引用数据类型来说，== 比较的是对象的内存地址。</li></ul> <blockquote><p>因为 Java 只有值传递，所以，对于 == 来说，不管是比较基本数据类型，还是引用数据类型的变量，其本质比较的都是值，只是引用类型变量存的值是对象的地址。</p></blockquote> <p>equals() 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。equals()方法存在于Object类中，而Object类是所有类的直接或间接父类，因此所有的类都有equals()方法。</p> <p>equals() 方法存在两种使用情况：</p> <ul><li>类没有重写 equals()方法 ：通过equals()比较该类的两个对象时，等价于通过“==”比较这两个对象，使用的默认是 Object类equals()方法。</li> <li>类重写了 equals()方法 ：一般我们都重写 equals()方法来比较两个对象中的属性是否相等；若它们的属性相等，则返回 true(即，认为这两个对象相等)。</li></ul> <h3 id="hashcode-有什么用"><a href="#hashcode-有什么用" class="header-anchor">#</a> hashCode() 有什么用？</h3> <h3 id="为什么要有-hashcode"><a href="#为什么要有-hashcode" class="header-anchor">#</a> 为什么要有 hashCode？</h3> <h3 id="string、stringbuffer、stringbuilder-的区别"><a href="#string、stringbuffer、stringbuilder-的区别" class="header-anchor">#</a> String、StringBuffer、StringBuilder 的区别？</h3> <h3 id="string-为什么是不可变的"><a href="#string-为什么是不可变的" class="header-anchor">#</a> String 为什么是不可变的?</h3> <h3 id="字符串拼接用-还是-stringbuilder"><a href="#字符串拼接用-还是-stringbuilder" class="header-anchor">#</a> 字符串拼接用“+” 还是 StringBuilder?</h3> <h3 id="string-equals-和-object-equals-有何区别"><a href="#string-equals-和-object-equals-有何区别" class="header-anchor">#</a> String#equals() 和 Object#equals() 有何区别？</h3> <h3 id="字符串常量池的作用了解吗"><a href="#字符串常量池的作用了解吗" class="header-anchor">#</a> 字符串常量池的作用了解吗？</h3> <h3 id="string-s1-new-string-abc-这句话创建了几个字符串对象"><a href="#string-s1-new-string-abc-这句话创建了几个字符串对象" class="header-anchor">#</a> String s1 = new String(&quot;abc&quot;);这句话创建了几个字符串对象？</h3> <h3 id="intern-方法有什么作用"><a href="#intern-方法有什么作用" class="header-anchor">#</a> intern 方法有什么作用?</h3> <h3 id="string-类型的变量和常量做-运算时发生了什么"><a href="#string-类型的变量和常量做-运算时发生了什么" class="header-anchor">#</a> String 类型的变量和常量做“+”运算时发生了什么？</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/java/basics/java-basic-questions-01.html" class="prev">
+        🔍JAVA常见基础面试题总结 01
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=316756.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>大城小事</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>杨千嬅</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.3bb93ac2.js" defer></script><script src="/assets/js/3.f4508a87.js" defer></script><script src="/assets/js/13.627ae6c3.js" defer></script><script src="/assets/js/4.d65b8449.js" defer></script>
+  </body>
+</html>

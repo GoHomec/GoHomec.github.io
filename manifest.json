@@ -1,10 +1,19 @@
 {
+<<<<<<< HEAD
   "name": "君哥聊編程",
   "short_name": "君哥",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#2196f3",
   "description": "君哥聊編程主页",
+=======
+  "name": "GoHomec",
+  "short_name": "GoHomec",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2196f3",
+  "description": "个人博客主页",
+>>>>>>> 7e086ac (java基础面试题补充)
   "theme_color": "blue",
   "icons": [
     {
